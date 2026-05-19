@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>AI CSV SQL Assistant</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+    <h2> CSV → AI → PostgreSQL</h2>
+
+    <div id="drop-area">
+        <p>Drag & Drop CSV or Click</p>
+        <input type="file" id="fileElem" hidden>
+    </div>
+
+    <div id="loader" class="hidden">⏳ Processing...</div>
+
+    <p id="status"></p>
+
+    <h3> Generated SQL</h3>
+    <pre id="sqlBox"></pre>
+
+    <h3> Preview</h3>
+    <table id="previewTable"></table>
+
+    <div id="chatBox" class="hidden">
+        <h3> Ask your data</h3>
+        <input type="text" id="queryInput" placeholder="Ask anything...">
+        <button onclick="sendQuery()">Send</button>
+
+        <h4>Generated SQL</h4>
+        <pre id="chatSQL"></pre>
+
+        <h4>Results</h4>
+        <table id="chatResult"></table>
+    </div>
+
+    <script src="/static/script.js"></script>
+
+</body>
+
+</html>

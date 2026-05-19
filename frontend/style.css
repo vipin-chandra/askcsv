@@ -1,0 +1,57 @@
+body {
+    font-family: Arial;
+    text-align: center;
+    background: #f4f6f9;
+}
+
+#drop-area {
+    border: 2px dashed #555;
+    padding: 40px;
+    width: 300px;
+    margin: auto;
+    margin-top: 30px;
+    cursor: pointer;
+    background: white;
+}
+
+.highlight {
+    border-color: green;
+}
+
+.hidden {
+    display: none;
+}
+
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 70%;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+
+th {
+    background: #222;
+    color: white;
+}
+
+pre {
+    background: black;
+    color: lime;
+    padding: 10px;
+    width: 70%;
+    margin: auto;
+}
+
+#chatBox {
+    margin-top: 30px;
+}
+
+input {
+    padding: 8px;
+    width: 250px;
+}
